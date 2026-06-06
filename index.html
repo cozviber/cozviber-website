@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="COZVIBER is a trusted OEM and ODM clothing manufacturer providing custom apparel production, private label services, fabric sourcing, sampling, and bulk manufacturing for global fashion brands.">
+    <meta property="og:title" content="OEM Clothing Manufacturer and Private Label Apparel Factory | COZVIBER">
+    <meta property="og:description" content="COZVIBER is a trusted OEM and ODM clothing manufacturer providing custom apparel production, private label services, fabric sourcing, sampling, and bulk manufacturing for global fashion brands.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cozviber.com">
+    <title>OEM Clothing Manufacturer and Private Label Apparel Factory | COZVIBER</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #FFFFFF;
+            --bg-secondary: #F9F9F9;
+            --text-main: #121212;
+            --text-muted: #333333;
+            --accent-main: #121212;
+            --accent-gold: #D4C1A8;
+            --container-max: 1440px;
+            --container-px-desktop: 96px;
+            --container-px-mobile: 28px;
+            --section-py: 140px;
+            --grid-gap: 40px;
+            --transition-smooth: background 0.3s cubic-bezier(0.2, 0, 0.1, 1), transform 0.3s cubic-bezier(0.2, 0, 0.1, 1), box-shadow 0.3s cubic-bezier(0.2, 0, 0.1, 1);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Source Han Sans", "Microsoft YaHei", "Heiti SC", Helvetica, Arial, sans-serif; background: var(--bg-primary); color: var(--text-main); line-height: 1.6; scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        .container { max-width: var(--container-max); margin: 0 auto; padding: 0 var(--container-px-desktop); }
+        section { padding: var(--section-py) 0; }
+        h1, h2, h3, h4 { color: var(--text-main); }
+        h1 { font-size: 48px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 24px; }
+        h2 { font-size: 36px; font-weight: 600; line-height: 1.2; margin-bottom: 56px; letter-spacing: -0.015em; }
+        h3 { font-size: 22px; font-weight: 600; line-height: 1.3; margin-bottom: 16px; }
+        p { color: var(--text-muted); font-size: 16px; text-align: justify; line-height: 1.7; letter-spacing: 0.01em; }
+
+        .btn-primary { display: inline-flex; align-items: center; justify-content: center; background: var(--accent-main); color: #FFFFFF; padding: 18px 48px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: var(--transition-smooth); border: none; cursor: pointer; font-size: 15px; letter-spacing: 0.02em; }
+        .btn-primary:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.12); background: #000000; color: #FFFFFF; }
+        .btn-primary:active { background: #000; transform: translateY(1px); }
+        .btn-primary-nav { padding: 10px 24px !important; font-size: 14px !important; }
+        .whatsapp-float { display: none; }
+        .social-float { position: fixed; bottom: 32px; right: 32px; z-index: 999; display: flex; flex-direction: column; gap: 12px; }
+        .social-float a { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; transition: var(--transition-smooth); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+        .social-float a:hover { transform: scale(1.08); }
+        .social-float .fb { background: #1877F2; }
+        .social-float .ig { background: linear-gradient(135deg, #8B5CF6, #EC4899); }
+        .social-float .wa { background: #26A85B; }
+        .social-float svg { width: 22px; height: 22px; fill: white; }
+
+        .navbar { background: rgba(255, 255, 255, 0.99); backdrop-filter: blur(12px); border-bottom: 1px solid #E8E8E8; height: 88px; display: flex; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .nav-container { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 26px; letter-spacing: -0.03em; color: var(--text-main); text-decoration: none; }
+        .logo img { height: 48px; width: auto; display: block; }
+        .site-logo { height: 48px; width: auto; display: block; }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { text-decoration: none; color: #121212; font-weight: 500; font-size: 16px; transition: var(--transition-smooth); letter-spacing: 0.02em; }
+        .nav-links a:hover { color: var(--accent-gold); }
+        .lang-toggle { background: transparent; border: 1px solid #E8E8E8; padding: 6px 16px; border-radius: 40px; cursor: pointer; font-family: inherit; font-weight: 600; color: var(--text-main); transition: var(--transition-smooth); }
+        .lang-toggle:focus, .btn-primary:focus, .mobile-menu-btn:focus { outline: 2px solid var(--accent-gold); outline-offset: 2px; }
+
+        .compliance-bar { background: #1A1A1A; padding: 18px 0; text-align: center; color: #CCCCCC; font-size: 13px; letter-spacing: 0.04em; font-weight: 500; }
+        .compliance-bar span { color: #FFFFFF; font-weight: 600; margin: 0 16px; }
+
+        .hero-section { padding: 80px 0 100px 0; background: var(--bg-primary); }
+        .hero-grid { display: flex; align-items: center; gap: 64px; }
+        .hero-left { flex: 1; }
+        .hero-right { flex: 1; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 240px 240px; gap: 16px; }
+        .hero-right img { width: 100%; height: 100%; object-fit: cover; border-radius: 16px; filter: contrast(1.05) brightness(1.02); }
+        .img-large { grid-row: span 2; }
+
+        .trust-bar { background: var(--bg-secondary); padding: 48px 0; border-bottom: 1px solid #E8E8E8; }
+        .trust-metrics { display: flex; justify-content: space-between; }
+        .trust-item { flex: 1; text-align: center; border-right: 1px solid #E8E8E8; }
+        .trust-item:last-child { border-right: none; }
+        .trust-number { font-size: 38px; font-weight: 700; color: var(--accent-gold); line-height: 1; }
+        .trust-label { font-size: 13px; color: #777777; margin-top: 8px; font-weight: 500; }
+
+        .timeline-wrapper { max-width: 850px; margin: 0 auto; position: relative; }
+        .timeline-wrapper::before { content: ''; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: #E8E8E8; }
+        .timeline-event { position: relative; padding-left: 80px; margin-bottom: 56px; }
+        .timeline-dot { position: absolute; left: 15px; top: 6px; width: 18px; height: 18px; border-radius: 50%; background: var(--bg-primary); border: 3px solid var(--accent-gold); }
+        .timeline-year { font-size: 26px; font-weight: 700; color: var(--accent-main); margin-bottom: 12px; font-variant-numeric: tabular-nums; }
+
+        .network-section { background: #191919; position: relative; color: var(--bg-primary); overflow: hidden; }
+        .network-section h2 { color: var(--bg-primary); }
+        .map-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&h=600&fit=crop'); background-size: cover; opacity: 0.08; pointer-events: none; }
+        .bases-grid { display: flex; gap: var(--grid-gap); position: relative; z-index: 2; margin-top: 56px; }
+        .base-card { flex: 1; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255,255,255,0.08); padding: 48px; border-radius: 16px; backdrop-filter: blur(10px); }
+        .base-card h3 { color: #FFFFFF; font-size: 22px; margin-bottom: 16px; }
+        .base-card p { color: #AAAAAA; font-size: 14px; line-height: 1.6; letter-spacing: 0.01em; }
+        .base-tag { display: inline-block; background: var(--accent-gold); color: #121212; padding: 4px 14px; border-radius: 40px; font-size: 12px; font-weight: 600; text-transform: uppercase; margin-bottom: 24px; letter-spacing: 0.03em; }
+
+        .workshops-section { background: var(--bg-secondary); }
+        .workshops-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--grid-gap); }
+        .workshop-card { background: var(--bg-primary); border-radius: 16px; overflow: hidden; border: 1px solid #E8E8E8; transition: var(--transition-smooth); }
+        .workshop-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.06); }
+        .img-wrapper { width: 100%; height: 240px; overflow: hidden; }
+        .workshop-card img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth); filter: contrast(1.05) brightness(1.02); }
+        .workshop-card:hover img { transform: scale(1.03); }
+        .workshop-content { padding: 32px; }
+        .workshop-content p { font-size: 14px; line-height: 1.6; letter-spacing: 0.01em; }
+
+        .mobile-menu-btn { display: none; }
+        .mobile-nav-overlay { display: none; }
+
+        .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--grid-gap); margin-top: 40px; }
+        .product-card { background: var(--bg-secondary); border-radius: 16px; overflow: hidden; border: 1px solid #E8E8E8; transition: var(--transition-smooth); }
+        .product-card:hover { transform: translateY(-6px); border-color: var(--accent-gold); box-shadow: 0 20px 40px rgba(0,0,0,0.03); }
+        .product-card .img-container { width: 100%; aspect-ratio: 3/4; overflow: hidden; background: #E8E8E8; }
+        @media (max-width: 768px) {
+            .product-card .img-container { height: auto; }
+        }
+        .product-card img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition-smooth); filter: contrast(1.05) brightness(1.02); }
+        .product-card:hover img { transform: scale(1.03); }
+        .product-card .item-info { padding: 24px; }
+        .product-card h4 { font-size: 17px; margin-bottom: 8px; font-weight: 600; color: var(--text-main); }
+        .product-card .tech-list { list-style: none; padding: 0; margin: 0; }
+        .product-card .tech-list li { font-size: 12px; color: #777777; padding: 3px 0; font-weight: 500; letter-spacing: 0.03em; }
+        .product-card .tech-list li::before { content: '\2022'; color: var(--accent-gold); font-weight: 700; margin-right: 8px; }
+
+        .timeline-content h4 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: var(--text-main); }
+        .timeline-content p { font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+
+        .gallery-actions { display: flex; gap: 16px; justify-content: center; align-items: center; margin-top: 48px; }
+        .gallery-actions .btn-tiktok { background: #000000; color: #FFFFFF; text-decoration: none; font-size: 15px; font-weight: 600; padding: 14px 36px; text-align: center; border-radius: 8px; transition: var(--transition-smooth); cursor: pointer; border: none; display: inline-flex; align-items: center; justify-content: center; line-height: 1.3; letter-spacing: 0.02em; }
+        .gallery-actions .btn-tiktok:hover { opacity: 0.85; }
+        .gallery-actions .btn-tiktok small { font-size: 11px; font-weight: 400; opacity: 0.8; }
+        .gallery-actions .btn-b2b { background: transparent; color: var(--text-main); border: 1px solid var(--text-main); text-decoration: none; font-size: 15px; font-weight: 600; padding: 14px 36px; text-align: center; border-radius: 8px; transition: var(--transition-smooth); display: inline-flex; align-items: center; justify-content: center; line-height: 1.3; letter-spacing: 0.02em; }
+        .gallery-actions .btn-b2b:hover { background: var(--text-main); color: #FFFFFF; }
+
+        .qr-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15,23,42,0.85); z-index: 1000; justify-content: center; align-items: center; }
+        .qr-overlay.active { display: flex; }
+        .qr-box { background: #FFFFFF; border-radius: 16px; padding: 48px; text-align: center; max-width: 380px; width: 90%; box-shadow: 0 24px 64px rgba(0,0,0,0.3); }
+        .qr-box h4 { font-size: 18px; margin-bottom: 24px; }
+        .qr-box .qr-img { width: 200px; height: 200px; margin: 0 auto 24px; background: #E8E8E8; display: flex; align-items: center; justify-content: center; font-size: 13px; color: var(--text-muted); }
+        .qr-box .qr-hint { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+        .qr-box .btn-close { background: var(--accent-main); color: #fff; border: none; padding: 10px 32px; border-radius: 8px; font-weight: 600; cursor: pointer; font-family: inherit; }
+        .qr-box .btn-close:hover { background: #000; }
+
+        .why-us-section { background: var(--bg-primary); }
+        .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--grid-gap); }
+        .why-card { background: var(--bg-secondary); border: 1px solid #E8E8E8; border-radius: 16px; padding: 40px 32px; transition: var(--transition-smooth); }
+        .why-card:hover { border-color: var(--accent-gold); box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .why-card h3 { font-size: 18px; margin-bottom: 12px; font-weight: 600; }
+        .why-card p { font-size: 14px; line-height: 1.6; letter-spacing: 0.01em; }
+
+        .inquiry-section { background: var(--bg-secondary); border-top: 1px solid #E8E8E8; }
+        .inquiry-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: stretch; }
+        .form-card { background: var(--bg-primary); padding: 48px; border-radius: 16px; border: 1px solid #E8E8E8; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-size: 14px; font-weight: 600; color: var(--text-main); margin-bottom: 8px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px 16px; border: 1px solid #E8E8E8; border-radius: 8px; font-family: inherit; font-size: 15px; color: var(--text-main); transition: var(--transition-smooth); }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--accent-gold); outline: none; }
+        .form-group input[type="file"] { padding: 10px; font-size: 13px; background: var(--bg-secondary); cursor: pointer; }
+        .info-list { margin-top: 32px; }
+        .info-item { display: flex; gap: 16px; margin-bottom: 28px; }
+        .info-icon { color: var(--accent-gold); font-weight: 700; font-size: 20px; line-height: 1; }
+        .email-box { margin-top: 36px; padding: 28px; background: var(--bg-primary); border-radius: 8px; border: 1px dashed #E8E8E8; }
+        .email-link { color: var(--text-main); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--accent-gold); transition: var(--transition-smooth); }
+        .email-link:hover { color: var(--accent-gold); }
+
+        footer { background: #191919; color: #999999; padding: 100px 0 48px 0; border-top: 1px solid #333333; }
+        .footer-grid { display: grid; grid-template-columns: 2fr auto auto auto; gap: 0; margin-bottom: 80px; }
+        .footer-grid > :nth-child(2) { padding-right: 32px; }
+        .footer-grid > :nth-child(3) { padding-left: 32px; padding-right: 32px; }
+        .footer-grid > :nth-child(4) { padding-left: 32px; padding-right: 96px; }
+        .footer-brand h3 { color: #FFFFFF; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 20px; }
+        .footer-brand p { color: #777777; font-size: 14px; max-width: 340px; line-height: 1.75; text-align: left; }
+        .footer-title { color: #FFFFFF; font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 28px; border-left: 2px solid var(--accent-gold); padding-left: 10px; line-height: 1; }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 14px; }
+        .footer-links a { color: #999999; text-decoration: none; font-size: 14px; transition: var(--transition-smooth); display: inline-block; }
+        .footer-links a:hover { color: var(--accent-gold); }
+        .footer-contact-item { font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
+        .footer-contact-item strong { color: #DDDDDD; font-weight: 500; display: block; margin-bottom: 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.02em; }
+        .footer-contact-item a { color: var(--accent-gold); text-decoration: none; font-weight: 600; font-size: 15px; transition: var(--transition-smooth); }
+        .footer-contact-item a:hover { color: #FFFFFF; }
+        .footer-bottom { border-top: 1px solid #333333; padding-top: 40px; padding-right: 80px; display: flex; justify-content: space-between; align-items: center; }
+        .footer-bottom p { font-size: 13px; color: #777777; }
+
+        @media (max-width: 1200px) {
+            .container { padding: 0 var(--container-px-mobile); }
+            :root { --container-px-desktop: 28px; --section-py: 88px; }
+            h1 { font-size: 42px; }
+            .hero-grid, .inquiry-grid { flex-direction: column; gap: 48px; }
+            .hero-left, .hero-right, .form-card { width: 100%; }
+            .workshops-grid, .product-grid, .why-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 48px; }
+            .footer-grid > :nth-child(2),
+            .footer-grid > :nth-child(3),
+            .footer-grid > :nth-child(4) { padding: 0; }
+            .footer-bottom { padding-right: 0; }
+        }
+        @media (max-width: 768px) {
+            * { -webkit-tap-highlight-color: transparent; }
+            html, body { overflow-x: hidden; max-width: 100%; }
+            body { touch-action: manipulation; }
+
+            section { padding: 88px 0; }
+            h1 { font-size: 36px; }
+            h2 { font-size: 28px; margin-bottom: 36px; }
+            .container { padding: 0 28px; }
+
+            p, .i18n p, .base-card p, .why-card p, .workshop-content p, .timeline-content p {
+                word-spacing: normal;
+                letter-spacing: normal;
+                line-height: 1.65;
+                text-align: left;
+            }
+
+            .hero-section { padding: 48px 0 64px 0; }
+            .hero-grid { flex-direction: column; gap: 28px; }
+            .hero-left h1 { font-size: 36px; margin-bottom: 16px; }
+            .hero-left p { font-size: 15px; max-width: 100%; margin-bottom: 28px; word-spacing: normal; letter-spacing: normal; line-height: 1.6; }
+            .hero-right { grid-template-rows: 180px 180px; }
+            .btn-primary { padding: 16px 40px; min-height: 44px; }
+
+            .compliance-bar { padding: 14px 20px; font-size: 12px; line-height: 1.8; white-space: normal; }
+            .compliance-bar span { display: block; margin: 0 0 4px 0; }
+
+            .trust-metrics { flex-direction: column; gap: 16px; }
+            .trust-item { border-right: none; border-bottom: 1px solid #E8E8E8; padding: 16px 0; }
+            .trust-item:last-child { border-bottom: none; padding-bottom: 16px; }
+            .trust-number { font-size: 28px; }
+
+            .why-grid { gap: 28px; }
+            .why-card { padding: 28px 22px; }
+            .why-card h3 { font-size: 18px; margin-bottom: 10px; }
+            .why-card p { font-size: 13px; line-height: 1.6; word-spacing: normal; letter-spacing: normal; }
+
+            .bases-grid { flex-direction: column; gap: 24px; }
+            .base-card { padding: 28px 20px; border: none; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
+            .base-card h3 { font-size: 22px; margin-bottom: 12px; }
+            .base-card p { font-size: 14px; line-height: 1.6; word-spacing: normal; letter-spacing: normal; }
+
+            .workshops-grid, .product-grid, .why-grid { grid-template-columns: 1fr; }
+            .workshop-content p { font-size: 13px; line-height: 1.6; }
+            .product-grid { gap: 28px; }
+            .product-card .img-container { aspect-ratio: 3/4; }
+
+            .nav-links { display: none; }
+            .navbar { height: 72px; }
+
+            .mobile-menu-btn { display: flex; width: 44px; height: 44px; align-items: center; justify-content: center; background: transparent; border: none; cursor: pointer; padding: 0; }
+            .mobile-menu-btn span { display: block; width: 22px; height: 2px; background: var(--text-main); position: relative; transition: background 0.3s; }
+            .mobile-menu-btn span::before, .mobile-menu-btn span::after { content: ''; position: absolute; width: 22px; height: 2px; background: var(--text-main); left: 0; transition: transform 0.3s; }
+            .mobile-menu-btn span::before { top: -7px; }
+            .mobile-menu-btn span::after { top: 7px; }
+            .mobile-menu-btn.active span { background: transparent; }
+            .mobile-menu-btn.active span::before { top: 0; transform: rotate(45deg); }
+            .mobile-menu-btn.active span::after { top: 0; transform: rotate(-45deg); }
+
+            .mobile-nav-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(18,18,18,0.95); z-index: 200; flex-direction: column; align-items: center; justify-content: center; gap: 28px; }
+            .mobile-nav-overlay.active { display: flex; }
+            .mobile-nav-overlay a { color: #FFFFFF; text-decoration: none; font-size: 18px; font-weight: 500; letter-spacing: 0.04em; transition: color 0.3s; }
+            .mobile-nav-overlay a:hover, .mobile-nav-overlay a:active { color: #D4C1A8; }
+            .mobile-nav-overlay .mobile-menu-close { position: absolute; top: 24px; right: 28px; width: 44px; height: 44px; background: transparent; border: none; color: #FFFFFF; font-size: 24px; cursor: pointer; }
+
+            .timeline-wrapper::before { left: 12px; }
+            .timeline-event { padding-left: 44px; margin-bottom: 36px; }
+            .timeline-dot { left: 3px; width: 18px; height: 18px; }
+            .timeline-year { font-size: 20px; margin-bottom: 8px; }
+            .timeline-content h4 { font-size: 16px; margin-bottom: 6px; }
+            .timeline-content p { font-size: 13px; line-height: 1.6; word-spacing: normal; letter-spacing: normal; }
+            #history { padding-top: 20px; }
+
+            .inquiry-grid { display: flex; flex-direction: column; gap: 0; }
+            .inquiry-grid > :first-child { padding-bottom: 28px; }
+            .inquiry-grid .form-card { padding: 28px 20px; width: 100%; }
+            .form-group input, .form-group select, .form-group textarea { font-size: 16px; width: 100%; min-height: 44px; }
+            .form-group input[type="file"] { width: 100%; padding: 12px; background: #F9F9F9; border-radius: 8px; cursor: pointer; }
+            .email-box { padding: 20px; }
+
+            .gallery-actions { flex-wrap: wrap; gap: 12px; }
+            .gallery-actions .btn-tiktok,
+            .gallery-actions .btn-b2b { font-size: 14px; padding: 12px 28px; min-height: 44px; }
+
+            footer { padding: 64px 0 32px 0; }
+            .footer-grid { display: flex; flex-direction: column; gap: 36px; }
+            .footer-grid > :nth-child(2),
+            .footer-grid > :nth-child(3),
+            .footer-grid > :nth-child(4) { padding: 0 20px 0 0; }
+            .footer-brand p { max-width: 100%; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 12px; padding-right: 0; }
+            .social-float { bottom: calc(24px + env(safe-area-inset-bottom, 0px)); right: 20px; gap: 10px; z-index: 300; }
+            .social-float a:active { transform: scale(1.08); }
+            .social-float a { width: 44px; height: 44px; }
+            .social-float svg { width: 20px; height: 20px; }
+
+            .btn-primary:active { background: #000; transform: none; }
+            .footer-links a:active { color: #D4C1A8; transform: none; }
+
+            .qr-box { max-height: 90vh; overflow-y: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SOCIAL MEDIA FLOATING HUB -->
+<div class="social-float">
+    <a href="https://www.facebook.com/profile.php?id=61589564256829" class="fb" target="_blank" rel="noopener noreferrer" title="Follow us on Facebook">
+        <svg viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/cozviber/" class="ig" target="_blank" rel="noopener noreferrer" title="Follow us on Instagram">
+        <svg viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+    <a href="https://wa.me/8618826100379" class="wa" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+        <svg viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#home" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
+            <img src="logo.png" alt="COZVIBER" style="height: 48px; width: auto;" class="site-logo" loading="lazy">
+        </a>
+        <div class="nav-links">
+            <a href="#home" class="i18n" data-en="Home" data-zh="首页">Home</a>
+            <a href="#why-us" class="i18n" data-en="Why Us" data-zh="为何选择我们">Why Us</a>
+            <a href="#history" class="i18n" data-en="Evolution" data-zh="发展历程">Evolution</a>
+            <a href="#network" class="i18n" data-en="Dual Hub" data-zh="双基地布局">Dual Hub</a>
+            <a href="#workshops" class="i18n" data-en="Capabilities" data-zh="制造能力">Capabilities</a>
+            <a href="#products" class="i18n" data-en="Products" data-zh="产品展示">Products</a>
+            <a href="#inquiry" class="i18n" data-en="Inquiry" data-zh="询价">Inquiry</a>
+        </div>
+        <div style="display: flex; gap: 16px; align-items: center;">
+            <button class="lang-toggle" onclick="toggleLanguage()" id="langBtn" aria-label="Switch language">中文</button>
+            <a href="#inquiry" class="btn-primary btn-primary-nav i18n" data-en="Contact Sales" data-zh="业务询盘">Contact Sales</a>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()" id="mobileMenuBtn" aria-label="Toggle navigation menu"><span></span></button>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE NAVIGATION OVERLAY -->
+<div class="mobile-nav-overlay" id="mobileNavOverlay" role="navigation" aria-hidden="true">
+    <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close menu">&times;</button>
+    <a href="#home" class="i18n" data-en="Home" data-zh="首页" onclick="closeMobileMenu()">Home</a>
+    <a href="#why-us" class="i18n" data-en="Why Us" data-zh="为何选择我们" onclick="closeMobileMenu()">Why Us</a>
+    <a href="#history" class="i18n" data-en="Evolution" data-zh="发展历程" onclick="closeMobileMenu()">Evolution</a>
+    <a href="#network" class="i18n" data-en="Dual Hub" data-zh="双基地布局" onclick="closeMobileMenu()">Dual Hub</a>
+    <a href="#workshops" class="i18n" data-en="Capabilities" data-zh="制造能力" onclick="closeMobileMenu()">Capabilities</a>
+    <a href="#products" class="i18n" data-en="Products" data-zh="产品展示" onclick="closeMobileMenu()">Products</a>
+    <a href="#inquiry" class="i18n" data-en="Inquiry" data-zh="询价" onclick="closeMobileMenu()">Inquiry</a>
+</div>
+
+<main>
+
+<!-- ===== 1. HERO (section id="home") ===== -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <h1 class="i18n" data-en="Agile and Scalable Global Apparel Manufacturing" data-zh="敏捷与规模兼备的全球服装制造商">Agile and Scalable Global Apparel Manufacturing</h1>
+                    <p class="i18n" data-en="Leveraging our dual-hub strategy, we operate 15,000 sqm of advanced facilities producing over 10 million units annually. From initial product development and sampling through to bulk production, we partner with international buyers every step of the way — thoroughly understanding your requirements and translating them into consistent, commercially viable outcomes." data-zh="依托双基地战略，我们运营1.5万平方米现代化厂房，年产量超1000万件。从前期产品开发和打样到批量大货生产，我们全程陪伴海外买手，深入沟通订单要求，将其转化为稳定一致、具有商业落地性的产品。" style="font-size: 18px; margin-bottom: 40px; max-width: 90%;">Leveraging our dual-hub strategy, we operate 15,000 sqm of advanced facilities producing over 10 million units annually. From initial product development and sampling through to bulk production, we partner with international buyers every step of the way — thoroughly understanding your requirements and translating them into consistent, commercially viable outcomes.</p>
+                    <a href="#inquiry" class="btn-primary i18n" data-en="Submit RFQ / Tech Pack" data-zh="提交 RFQ / 研发工艺包">Submit RFQ / Tech Pack</a>
+                </div>
+                <div class="hero-right">
+                    <img class="img-large" src="hero-large.png" alt="Clothing manufacturing production line" loading="lazy">
+                    <img src="hero-top-right.png" alt="Apparel quality inspection process" loading="lazy">
+                    <img src="hero-bottom-right.png" alt="Fabric production for apparel manufacturing" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 2. DATA BAR ===== -->
+    <div class="trust-bar">
+        <div class="container">
+            <div class="trust-metrics">
+                <div class="trust-item"><div class="trust-number">15,000 m&sup2;</div><div class="trust-label i18n" data-en="Total Production Floor Area" data-zh="集团总生产面积">Total Production Floor Area</div></div>
+                <div class="trust-item"><div class="trust-number">500+</div><div class="trust-label i18n" data-en="Skilled Workforce Across Dual Hubs" data-zh="双基地专业员工团队">Skilled Workforce Across Dual Hubs</div></div>
+                <div class="trust-item"><div class="trust-number">10M+ Pcs</div><div class="trust-label i18n" data-en="Annual Group Output" data-zh="集团年总产能">Annual Group Output</div></div>
+                <div class="trust-item"><div class="trust-number">&le; 7 Days</div><div class="trust-label i18n" data-en="Rapid Proto Sampling" data-zh="7天内极速原型打样">Rapid Proto Sampling</div></div>
+                <div class="trust-item"><div class="trust-number">3-Stage</div><div class="trust-label i18n" data-en="Pre/In/Post Production Inspection" data-zh="产前/产中/产后三阶段全检">Pre/In/Post Production Inspection</div></div>
+                <div class="trust-item"><div class="trust-number i18n" data-en="100%" data-zh="100%">100%</div><div class="trust-label i18n" data-en="3rd-Party QC Audit Welcome" data-zh="无条件配合第三方QC验货">3rd-Party QC Audit Welcome</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 3. COMPLIANCE BANNER ===== -->
+    <div class="compliance-bar">
+        <span class="i18n" data-en="OEKO-TEX® STANDARD 100" data-zh="OEKO-TEX® STANDARD 100">OEKO-TEX® STANDARD 100</span> <span>&bull;</span> <span class="i18n" data-en="FULL TRANSPARENCY" data-zh="全流程透明">FULL TRANSPARENCY</span> <span>&bull;</span> <span class="i18n" data-en="COMPLIANT SUPPLY CHAIN" data-zh="合规供应链">COMPLIANT SUPPLY CHAIN</span>
+    </div>
+
+    <!-- ===== 4. WHY PARTNER WITH US ===== -->
+    <section id="why-us" class="why-us-section">
+        <div class="container">
+            <h2 class="i18n" data-en="Why Partner with Us" data-zh="为何选择我们" style="text-align: center;">Why Partner with Us</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3 class="i18n" data-en="Consistency You Can Trust" data-zh="稳定一致，值得信赖">Consistency You Can Trust</h3>
+                    <p class="i18n" data-en="Pre-production samples match bulk exactly &mdash; this is our non-negotiable. We enforce a rigorous 3-stage QC protocol to eliminate sizing deviation, color drift, and fabric shrinkage issues that plague cross-border sourcing. Every production batch is measured against the approved sealed sample, so what you approve is what you receive. No more complaints about patterns going off-spec or garments shrinking after wash." data-zh="产前样与大货完全一致是我们的底线。严格执行产前、产中、产后三阶段质检体系，从根源上杜绝版型走样、色差偏移、洗水缩率超标等跨境采购中的常见痛点。每批大货均以封存签样为基准进行比对，确保所见即所得。再也不必担心版型走样或洗水后缩水变形的投诉。">Pre-production samples match bulk exactly &amp;mdash; this is our non-negotiable. We enforce a rigorous 3-stage QC protocol to eliminate sizing deviation, color drift, and fabric shrinkage issues that plague cross-border sourcing. Every production batch is measured against the approved sealed sample, so what you approve is what you receive. No more complaints about patterns going off-spec or garments shrinking after wash.</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="i18n" data-en="Speed and Scale, Balanced" data-zh="速度与规模兼得">Speed and Scale, Balanced</h3>
+                    <p class="i18n" data-en="Quality, speed, and cost are often considered an impossible triangle. With 15,000 sqm of production floorspace, 500+ skilled workers, and dual-hub JIT operations, we find the balance point that fits your specific program &mdash; whether you need agile small-batch testing or massive bulk delivery. Our scale keeps unit costs competitive; our specialization keeps quality uncompromised. We design production plans around your actual needs, not a one-size-fits-all formula." data-zh="品质、速度、价格常被视为不可能三角。凭借1.5万平米生产面积、500余名专业员工和双基地JIT运营体系，我们能根据客户实际情况，在品质-速度-成本之间找到适合每个项目的平衡点——无论你需要敏捷小单测试还是大规模批量交付。规模效应使成本可控，专业化分工使品质有保障。我们围绕客户的具体需求制定生产方案，而非一刀切。">Quality, speed, and cost are often considered an impossible triangle. With 15,000 sqm of production floorspace, 500+ skilled workers, and dual-hub JIT operations, we find the balance point that fits your specific program &amp;mdash; whether you need agile small-batch testing or massive bulk delivery. Our scale keeps unit costs competitive; our specialization keeps quality uncompromised. We design production plans around your actual needs, not a one-size-fits-all formula.</p>
+                </div>
+                <div class="why-card">
+                    <h3 class="i18n" data-en="Full Journey, One Partner" data-zh="全程陪伴，一个伙伴">Full Journey, One Partner</h3>
+                    <p class="i18n" data-en="From product development, fabric sourcing, and first-fit sampling to bulk production, finishing, and QC dispatch &mdash; we cover the entire journey under one roof. No handoffs between separate vendors, no accountability gaps. We design production plans around your specific requirements, supported by OEKO-TEX certified fabric channels and open-door 3rd-party QC access including SGS and Intertek." data-zh="从产品研发、面料甄选、首版打样到大货生产、后整理及质检出货——全流程在同一体系内完成。无供应商交接缝隙，无责任推诿空间。我们围绕您的具体需求制定生产方案，并以OEKO-TEX认证面料渠道和开放第三方QC进厂验货作为品质信任的基石。">From product development, fabric sourcing, and first-fit sampling to bulk production, finishing, and QC dispatch &amp;mdash; we cover the entire journey under one roof. No handoffs between separate vendors, no accountability gaps. We design production plans around your specific requirements, supported by OEKO-TEX certified fabric channels and open-door 3rd-party QC access including SGS and Intertek.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. CORPORATE EVOLUTION ===== -->
+    <section id="history" style="padding-top: 30px;">
+        <div class="container">
+            <h2 class="i18n" data-en="20+ Years of Manufacturing Evolution" data-zh="20余载服装制造进化史" style="text-align: center;">20+ Years of Manufacturing Evolution</h2>
+            <div class="timeline-wrapper">
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2005 &mdash; 2010</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="From a Single Sample Room and Boutique" data-zh="从一间板房与服装门店起步">From a Single Sample Room and Boutique</h4>
+                        <p class="i18n" data-en="The group began with one specialized garment sample room and a single retail storefront, building hands-on expertise in pattern making, fabric selection, and construction quality from the ground up." data-zh="始于一间专业服装板房与一家实体服装门店，从版型研发、面料甄选到缝制工艺完成原始技术积累。">The group began with one specialized garment sample room and a single retail storefront, building hands-on expertise in pattern making, fabric selection, and construction quality from the ground up.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2011 &mdash; 2015</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="OEM Division Formed &mdash; RMB 100M Annual Output" data-zh="OEM制造事业部成立，年产值突破亿元">OEM Division Formed &amp;mdash; RMB 100M Annual Output</h4>
+                        <p class="i18n" data-en="Established the Dongguan OEM Manufacturing Division, scaling from sample-room precision to industrial production lines. By 2015, the division reached a landmark annual output value of 100 million RMB, driven by exacting international QC standards and repeat orders from global buyers." data-zh="在东莞正式组建OEM制造事业部，从样板房迈向规模化产线。在严苛的国际质量标准驱动下，2015年事业部实现单年总产值突破一亿元人民币的里程碑，全球买手持续返单。">Established the Dongguan OEM Manufacturing Division, scaling from sample-room precision to industrial production lines. By 2015, the division reached a landmark annual output value of 100 million RMB, driven by exacting international QC standards and repeat orders from global buyers.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="ODM Design and E-Commerce Division Launched" data-zh="ODM自主研发与电商事业部成立">ODM Design and E-Commerce Division Launched</h4>
+                        <p class="i18n" data-en="Built an in-house design-driven ODM R&amp;D team to serve high-growth cross-border e-commerce platforms. Launched proprietary seasonal collections, shifting from pure contract manufacturing to full-spectrum design-to-delivery partnerships for online brands, wholesalers, and trading partners." data-zh="组建以设计研发为核心的自主ODM团队，深度服务全球高速发展的跨境电商平台、贸易商及批发商合作伙伴。推出原创季度开发系列，从纯代工全面转型为面向线上品牌和线下贸易伙伴的设计-开发-大货一站式伙伴。">Built an in-house design-driven ODM R&amp;D team to serve high-growth cross-border e-commerce platforms. Launched proprietary seasonal collections, shifting from pure contract manufacturing to full-spectrum design-to-delivery partnerships for online brands, wholesalers, and trading partners.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="Guangxi Volume-Production Base and Smart Apparel Incubation" data-zh="广西大规模生产基地落成与智能穿戴事业部孵化">Guangxi Volume-Production Base and Smart Apparel Incubation</h4>
+                        <p class="i18n" data-en="Opened the Guangxi Mass-Production Division, purpose-built for high-volume knit and woven apparel programs. In parallel, incubated a Smart Apparel and Wearables Division, launching the proprietary Warma series of heated garments and intelligent wearable devices." data-zh="广西大规模针梭织服装生产基地正式投产，专为大宗订单设计。同年孵化智能穿戴事业部，推出自主品牌Warma系列电热服装及智能穿戴设备，拓展传统制衣之外的科技边界。">Opened the Guangxi Mass-Production Division, purpose-built for high-volume knit and woven apparel programs. In parallel, incubated a Smart Apparel and Wearables Division, launching the proprietary Warma series of heated garments and intelligent wearable devices.</p>
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="Fast-Turn Division Scaled to 300K Units/Month" data-zh="快返事业部扩产至月均30万件">Fast-Turn Division Scaled to 300K Units/Month</h4>
+                        <p class="i18n" data-en="Expanded the Dongguan agile division into a digitally-managed fast-turn powerhouse. A single workshop now consistently delivers 300,000 units per month, supporting rapid reorders and trend-chasing replenishment for global supply chains." data-zh="东莞敏捷快返事业部完成全数字化扩产升级，单车间月稳产30万件。为全球品牌的爆款追加和趋势追单提供敏捷支撑，极限压缩测款到补货的周转周期。">Expanded the Dongguan agile division into a digitally-managed fast-turn powerhouse. A single workshop now consistently delivers 300,000 units per month, supporting rapid reorders and trend-chasing replenishment for global supply chains.</p>
+                    </div>
+                </div>
+                <div class="timeline-event" style="margin-bottom:0;">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h4 class="i18n" data-en="In-House Digital Printing and Laser Finishing Division" data-zh="自有数码印花及激光工艺事业部成立">In-House Digital Printing and Laser Finishing Division</h4>
+                        <p class="i18n" data-en="Integrated a wholly-owned digital textile printing and laser finishing division, operating industrial-grade sublimation transfer, all-over full-width printing, and precision laser burnout. Capable of processing knit, woven, mesh, plush, and blended fabrics with a monthly output of 800,000 meters." data-zh="集团整合成立自有数码印花及激光工艺事业部，配备工业级数码热转移印花、满幅定位印花及精密激光烧花裁剪产线。全面覆盖针织、梭织、网布、毛绒及混纺面料，月均产能达80万米。">Integrated a wholly-owned digital textile printing and laser finishing division, operating industrial-grade sublimation transfer, all-over full-width printing, and precision laser burnout. Capable of processing knit, woven, mesh, plush, and blended fabrics with a monthly output of 800,000 meters.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. DUAL HUB STRATEGY ===== -->
+    <section id="network" class="network-section">
+        <div class="map-overlay"></div>
+        <div class="container">
+            <h2 class="i18n" data-en="Dual-Hub Manufacturing Strategy" data-zh="双基地联合制造战略布局" style="text-align: center;">Dual-Hub Manufacturing Strategy</h2>
+            <div class="bases-grid">
+                <div class="base-card">
+                    <div class="base-tag i18n" data-en="Dongguan HQ" data-zh="东莞供应链总部">Dongguan HQ</div>
+                    <h3 class="i18n" data-en="The Agile Center" data-zh="柔性快返与敏捷开发中心">The Agile Center</h3>
+                    <p class="i18n" data-en="Capable of both knit and woven production, the Dongguan hub is optimized for small-to-mid batch agility, covering fast prototyping, rapid replenishment, and complex ODM development. Operates manual precision lines and fully-automated production cells under a JIT management model, serving cross-border e-commerce, fast-fashion brands, wholesalers, and trading partners." data-zh="广东东莞基地兼具针织与梭织生产能力，以中小批量敏捷交付为核心优势，覆盖快速原型打样、柔性快返及复杂ODM研发。并行运营人工精工产线与全自动流水线，采用JIT精益管理模式，灵活服务跨境电商、快时尚品牌、批发商及贸易商等全渠道合作伙伴。">Capable of both knit and woven production, the Dongguan hub is optimized for small-to-mid batch agility, covering fast prototyping, rapid replenishment, and complex ODM development. Operates manual precision lines and fully-automated production cells under a JIT management model, serving cross-border e-commerce, fast-fashion brands, wholesalers, and trading partners.</p>
+                </div>
+                <div class="base-card">
+                    <div class="base-tag i18n" data-en="Guangxi Branch" data-zh="广西大规模生产基地">Guangxi Branch</div>
+                    <h3 class="i18n" data-en="Volume Production Base" data-zh="规模化、集约化生产基地">Volume Production Base</h3>
+                    <p class="i18n" data-en="Also handling both knit and woven construction, the Guangxi hub is engineered for high-volume, massive-scale stability. Combining automated mass-production lines with dedicated manual finishing stations, it delivers global cost-efficiency and reliable lead-times for wholesalers, trading companies, and slow-fashion brands seeking long-running program consistency." data-zh="广西基地同样覆盖针织与梭织双工艺，专为大批量、高稳定性交付而设计。融合全自动大规模产线与专业手工精修工位，为批发商、贸易公司及注重长期项目稳定性的慢时尚品牌提供优秀的成本控制和可靠交付排期。">Also handling both knit and woven construction, the Guangxi hub is engineered for high-volume, massive-scale stability. Combining automated mass-production lines with dedicated manual finishing stations, it delivers global cost-efficiency and reliable lead-times for wholesalers, trading companies, and slow-fashion brands seeking long-running program consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== 7. TECHNICAL CAPABILITIES (section id="workshops") ===== -->
+    <section id="workshops" class="workshops-section">
+        <div class="container">
+            <h2 class="i18n" data-en="In-House Technical Capabilities" data-zh="自营数字化车间与特种工艺实力">In-House Technical Capabilities</h2>
+            <div class="workshops-grid">
+                <div class="workshop-card">
+                    <div class="img-wrapper"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23F9F9F9' width='600' height='400'/%3E%3Cg stroke='%23121212' stroke-width='1.8' fill='none'%3E%3Cpath d='M120 180h360M180 140v80M280 140v80M380 140v80M480 140v80M150 180v120c0 20 16 36 36 36h228c20 0 36-16 36-36V180'/%3E%3Ccircle cx='300' cy='220' r='18' stroke-width='2.5'/%3E%3Cpath d='M300 202v36M282 220h36M200 300h200l-8-20h-184z'/%3E%3C/g%3E%3Cg stroke='%23121212' stroke-width='1.8' fill='none' stroke-dasharray='4 3'%3E%3Cpath d='M100 340h400'/%3E%3C/g%3E%3C/svg%3E" alt="Sewing workshop vector for apparel OEM manufacturing" loading="lazy"></div>
+                    <div class="workshop-content">
+                        <h3 class="i18n" data-en="6 Specialized Sewing Workshops" data-zh="6大专业化缝制车间">6 Specialized Sewing Workshops</h3>
+                        <p class="i18n" data-en="Six dedicated production workshops, each focused on a specific garment category, enabling specialized craftsmanship and streamlined management per product type. Spanning knit and woven construction across the full range: dresses, shirts, blouses, T-shirts, trousers, and multi-layered skirts. Capable of handling mesh, lace, and blended fabrics with dedicated washing, rivet-fastening, and bartack reinforcement stations on each line." data-zh="设立6个专业化缝制车间，每个车间对应特定品类，实现专业化车间与专业化品类的精细化生产管理。全面覆盖连衣裙、衬衣、T恤、裤子及多层半身裙等针梭织全品类，可处理网布、蕾丝及混纺面料，各产线均配备专业洗水、撞钉及打枣加固工位。">Six dedicated production workshops, each focused on a specific garment category, enabling specialized craftsmanship and streamlined management per product type. Spanning knit and woven construction across the full range: dresses, shirts, blouses, T-shirts, trousers, and multi-layered skirts. Capable of handling mesh, lace, and blended fabrics with dedicated washing, rivet-fastening, and bartack reinforcement stations on each line.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <div class="img-wrapper"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23F9F9F9' width='600' height='400'/%3E%3Cg stroke='%23121212' stroke-width='1.8' fill='none'%3E%3Crect x='150' y='100' width='300' height='160' rx='6'/%3E%3Cpath d='M170 120h260M170 140h200M170 240h180M250 120v140M350 120v140'/%3E%3Ccircle cx='300' cy='180' r='12' stroke-width='2'/%3E%3Crect x='180' y='260' width='240' height='6' rx='3'/%3E%3C/g%3E%3Cg stroke='%23121212' stroke-width='1.8' fill='none'%3E%3Cpath d='M220 280v80M380 280v80M220 360h160M180 340l40-20M420 340l-40-20'/%3E%3C/g%3E%3Cg stroke='%23121212' stroke-width='1.5' fill='none'%3E%3Cpath d='M210 310h40l-8-16h-24zM350 310h40l-8-16h-24z'/%3E%3C/g%3E%3C/svg%3E" alt="Digital printing and laser finishing graphic for custom apparel production" loading="lazy"></div>
+                    <div class="workshop-content">
+                        <h3 class="i18n" data-en="In-House Digital Print and Laser Finishing Center" data-zh="自营数码印花及激光工艺中心">In-House Digital Print and Laser Finishing Center</h3>
+                        <p class="i18n" data-en="Wholly-owned digital sublimation transfer, all-over full-width printing, and precision laser burnout &mdash; 800,000 meters monthly capacity. Directly processes knit, woven, mesh, and plush fabrics for high-definition, color-accurate results with no outsourcing delays." data-zh="自有数码热转移印花、满幅定位印花及精密激光烧花裁剪产线，月产能80万米。直接处理针织、梭织、网布及毛绒面料，实现高清色彩还原，消除外发瓶颈。">Wholly-owned digital sublimation transfer, all-over full-width printing, and precision laser burnout &amp;mdash; 800,000 meters monthly capacity. Directly processes knit, woven, mesh, and plush fabrics for high-definition, color-accurate results with no outsourcing delays.</p>
+                    </div>
+                </div>
+                <div class="workshop-card">
+                    <div class="img-wrapper"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect fill='%23F9F9F9' width='600' height='400'/%3E%3Cg stroke='%23121212' stroke-width='1.8' fill='none'%3E%3Ccircle cx='300' cy='140' r='8'/%3E%3Cpath d='M292 140v60M308 140v60M280 200h40M220 240h160v100H220z'/%3E%3Cpath d='M240 280h120M240 310h120M240 340h120'/%3E%3Ccircle cx='300' cy='200' r='14' stroke-width='2.5'/%3E%3C/g%3E%3Cg stroke='%23D4C1A8' stroke-width='1.5' fill='none'%3E%3Cpath d='M260 260l-20-20M340 260l20-20M260 370l-20 20M340 370l20 20'/%3E%3C/g%3E%3Cg fill='%23121212'%3E%3Ccircle cx='230' cy='320' r='3'/%3E%3Ccircle cx='250' cy='350' r='3'/%3E%3Ccircle cx='350' cy='350' r='3'/%3E%3Ccircle cx='370' cy='320' r='3'/%3E%3C/g%3E%3C/svg%3E" alt="Garment post-processing value added service vector illustration" loading="lazy"></div>
+                    <div class="workshop-content">
+                        <h3 class="i18n" data-en="Specialized Value-Add Process Hub" data-zh="特种高附加值工艺加工中心">Specialized Value-Add Process Hub</h3>
+                        <p class="i18n" data-en="In-house specialist stations for precision mechanical smocking, multi-head computerized embroidery, automated high-fix rhinestone application, industrial laser burnout, garment washing, and rivet-fastening. Smart-heated element embedding capabilities also serve functional wearables programs." data-zh="自营特种工艺工位全面涵盖：精密机械打揽、多头电脑绣花、自动化高牢度烫钻、工业激光烧花镂空、成衣洗水及撞钉装饰。同时具备智能穿戴发热元器件拼装能力，全面赋能功能性服饰项目。">In-house specialist stations for precision mechanical smocking, multi-head computerized embroidery, automated high-fix rhinestone application, industrial laser burnout, garment washing, and rivet-fastening. Smart-heated element embedding capabilities also serve functional wearables programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ===== 8. PRODUCT DISPLAY (section id="products") ===== -->
+    <section id="products">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 64px;">
+                <h2 class="i18n" data-en="Selected Dress Collection" data-zh="连衣裙系列展示" style="margin-bottom: 12px;">Selected Dress Collection</h2>
+                <p class="i18n" data-en="A cross-section of our day-to-day production range, demonstrating multi-factory workmanship across different fabrication techniques. All styles are available for both B2B bulk procurement and B2C retail channels." data-zh="日常生产系列展示，呈现跨基地不同工艺水平的制衣能力。全系列款式均支持B2B大宗批量采购与B2C零售渠道。">A cross-section of our day-to-day production range, demonstrating multi-factory workmanship across different fabrication techniques. All styles are available for both B2B bulk procurement and B2C retail channels.</p>
+            </div>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="img-container"><img src="digital-print-halter-maxi-dress-cozviber.png" alt="Custom tropical print halter maxi dress with cutout detail, OEM digital printing apparel manufacturing" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Tropical Print Maxi Dress" data-zh="热带印花挂脖高开叉长裙">Tropical Print Maxi Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Digital heat transfer print, cutout sewing, high slit, stretch knit fabric" data-zh="数码热转移印花/镂空拼接/高开叉/弹性针织面料">Digital heat transfer print, cutout sewing, high slit, stretch knit fabric</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-container"><img src="rhinestone-strapless-mini-dress-cozviber.png" alt="Hand rhinestone embellished strapless mini dress, OEM custom evening wear manufacturing" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Rhinestone Evening Mini Dress" data-zh="酒红通体烫钻抹胸短礼服">Rhinestone Evening Mini Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Hand-set rhinestone, strapless design, bodycon fitting, high-stretch knit" data-zh="手工烫钻/抹胸设计/紧身版型/高弹针织">Hand-set rhinestone, strapless design, bodycon fitting, high-stretch knit</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-container"><img src="art-print-woven-shirt-dress-cozviber.png" alt="Cartoon art printed woven shirt dress with tie waist, custom OEM woven apparel production" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Art Printed Shirt Midi Dress" data-zh="卡通印花翻领收腰衬衣裙">Art Printed Shirt Midi Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Woven fabric print, self-tie waist, shirt placket, casual midi dress" data-zh="梭织印花/自系带收腰/衬衫门襟/休闲中长款">Woven fabric print, self-tie waist, shirt placket, casual midi dress</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-container"><img src="draped-satin-pleated-midi-dress-cozviber.png" alt="Draped off shoulder satin pleated midi dress, custom formal dress OEM manufacturer" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Draped Satin Pleated Dress" data-zh="斜肩缎面压褶中长裙">Draped Satin Pleated Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Heavy satin, accordion pleat, off-shoulder, asymmetrical hem" data-zh="重磅缎面/风琴压褶/斜肩设计/不对称裙摆">Heavy satin, accordion pleat, off-shoulder, asymmetrical hem</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-container"><img src="leaf-print-halter-bodycon-dress-cozviber.png" alt="Tropical leaf print halter bodycon maxi dress, custom knit garment OEM production" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Leaf Print Halter Bodycon Dress" data-zh="墨绿植物印花挂脖包臀长裙">Leaf Print Halter Bodycon Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Placement print, picot edge stitching, bodycon fit, elastic knit" data-zh="定位印花/芽边线迹/包臀版型/弹性针织">Placement print, picot edge stitching, bodycon fit, elastic knit</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="img-container"><img src="textured-chiffon-wrap-midi-dress-cozviber.png" alt="Twist waist textured chiffon wrap midi dress, casual apparel OEM custom production" loading="lazy"></div>
+                    <div class="item-info">
+                        <h4 class="i18n" data-en="Textured Wrap Midi Dress" data-zh="豆绿扭结裹身雪纺中长裙">Textured Wrap Midi Dress</h4>
+                        <ul class="tech-list">
+                            <li class="i18n" data-en="Crinkle chiffon, twist knot, wrap design, bodycon skirt" data-zh="压皱雪纺/扭结设计/裹身版型/包臀裙摆">Crinkle chiffon, twist knot, wrap design, bodycon skirt</li>
+                            <li class="i18n" data-en="ODM: 1 pc MOQ" data-zh="ODM: 一件起批">ODM: 1 pc MOQ</li>
+                            <li class="i18n" data-en="OEM: please consult sales" data-zh="OEM: 请咨询销售人员">OEM: please consult sales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-actions">
+                <button class="btn-tiktok i18n" data-en="TikTok Shop" data-zh="TikTok Shop" onclick="openQrOverlay()">TikTok Shop</button>
+                <a href="#inquiry" class="btn-b2b i18n" data-en="Inquire for Bulk Order" data-zh="发起大宗采购询价">Inquire for Bulk Order</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TikTok QR Overlay -->
+    <div class="qr-overlay" id="qrOverlay" role="dialog" aria-modal="true" aria-labelledby="qr-title">
+        <div class="qr-box">
+            <h4 id="qr-title" class="i18n" data-en="Scan to Visit Our TikTok Shop" data-zh="扫码访问 TikTok 店铺">Scan to Visit Our TikTok Shop</h4>
+            <div class="qr-img" id="qrPlaceholder">
+                <span class="i18n" data-en="[QR Code &mdash; TikTok Shop]" data-zh="[二维码 &mdash; TikTok 店铺]">[QR Code &amp;mdash; TikTok Shop]</span>
+            </div>
+            <p class="qr-coming" style="text-align:center;font-size:14px;color:#D4C1A8;margin-bottom:12px;font-weight:600;">Coming Soon</p>
+            <p class="qr-hint i18n" data-en="Please scan with the TikTok mobile app to open the store" data-zh="请用 TikTok 移动端扫码并跳转到店铺">Please scan with the TikTok mobile app to open the store</p>
+            <button class="btn-close i18n" data-en="Close" data-zh="关闭" onclick="closeQrOverlay()" aria-label="Close">Close</button>
+        </div>
+    </div>
+
+    
+
+<!-- ===== 9. B2B INQUIRY (section id="inquiry") ===== -->
+    <section id="inquiry" class="inquiry-section">
+        <div class="container">
+            <div class="inquiry-grid">
+                <div>
+                    <h2 class="i18n" data-en="Commercial RFQ Portal" data-zh="企业级大宗采购与询价中心" style="margin-bottom: 24px;">Commercial RFQ Portal</h2>
+                    <p class="i18n" data-en="Submit your detailed parameters or original tech packs. Our account executives review and return an actionable cost breakdown within 12 business hours. All design files and commercial data are protected under automatic NDA." data-zh="请在此提交您的采购规格或原始工艺包。我们的专属大客户项目经理将在12个工作小时内向您回复细化的报价单。所有设计稿件和商业数据默认受NDA保密协议保护。">Submit your detailed parameters or original tech packs. Our account executives review and return an actionable cost breakdown within 12 business hours. All design files and commercial data are protected under automatic NDA.</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="info-icon">&check;</div>
+                            <div>
+                                <h4 class="i18n" data-en="Full-Stage Milestone Quality Inspection" data-zh="全流程多节点透明质检保障">Full-Stage Milestone Quality Inspection</h4>
+                                <p style="font-size: 14px;" class="i18n" data-en="We strictly enforce Pre-production, In-line, and Final Post-production inspections. 100% open to live evaluations by your own or 3rd-party QC teams, including SGS and Intertek." data-zh="严格执行产前、产中、产后三阶段质检，无条件配合贵司团队或SGS等第三方机构进厂独立验货。">We strictly enforce Pre-production, In-line, and Final Post-production inspections. 100% open to live evaluations by your own or 3rd-party QC teams, including SGS and Intertek.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">&check;</div>
+                            <div>
+                                <h4 class="i18n" data-en="OEKO-TEX Certified Fabric Sourcing" data-zh="OEKO-TEX认证面料采购体系">OEKO-TEX Certified Fabric Sourcing</h4>
+                                <p style="font-size: 14px;" class="i18n" data-en="Extensive procurement channels for OEKO-TEX Standard 100 certified fabrics, ensuring full compliance with global market regulations on harmful substances." data-zh="全面对接OEKO-TEX Standard 100认证面料供应链，确保符合全球市场有害物质管控法规要求。">Extensive procurement channels for OEKO-TEX Standard 100 certified fabrics, ensuring full compliance with global market regulations on harmful substances.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">&check;</div>
+                            <div>
+                                <h4 class="i18n" data-en="End-to-End: Development to Bulk" data-zh="全周期服务：从研发到交付">End-to-End: Development to Bulk</h4>
+                                <p style="font-size: 14px;" class="i18n" data-en="We cover the complete journey &mdash; product development, fabric nomination, fit sampling, pre-production approval, bulk manufacturing, finishing, and QC dispatch &mdash; all under one operational roof." data-zh="覆盖完整流程——产品开发、面料选型、试身打样、产前确认、大货生产、后整理及质检出货——全流程在统一运营体系内完成。">We cover the complete journey &amp;mdash; product development, fabric nomination, fit sampling, pre-production approval, bulk manufacturing, finishing, and QC dispatch &amp;mdash; all under one operational roof.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="email-box">
+                        <h4 class="i18n" data-en="Direct Channels" data-zh="直连通道" style="margin-bottom: 12px; font-size: 15px; color: var(--accent-gold);">Direct Channels</h4>
+                        <div style="margin-bottom: 12px;">
+                            <span style="font-size: 13px; font-weight:600;" class="i18n" data-en="Wholesale / RFQ:" data-zh="大宗采购 / 询价：">Wholesale / RFQ:</span><br>
+                            <a href="mailto:sales@cozviber.com" class="email-link">sales@cozviber.com</a>
+                        </div>
+                        <div style="margin-bottom: 12px;">
+                            <span style="font-size: 13px; font-weight:600;" class="i18n" data-en="Quality and Compliance:" data-zh="品控与合规：">Quality and Compliance:</span><br>
+                            <a href="mailto:care@cozviber.com" class="email-link">care@cozviber.com</a>
+                        </div>
+                        <div>
+                            <span style="font-size: 13px; font-weight:600; display: block; margin-bottom: 6px;" class="i18n" data-en="Our Offices" data-zh="联系及生产地址">Our Offices</span>
+                            <span style="font-size: 13px; color: var(--text-muted); line-height: 1.8;">
+                                <span class="i18n" data-en="HQ: 3-4F, Bldg 2, No.769 Jienan Rd, Humen, Dongguan, Guangdong, China" data-zh="总部：中国广东省东莞市虎门镇捷南路769号2栋3-4楼">HQ: 3-4F, Bldg 2, No.769 Jienan Rd, Humen, Dongguan, Guangdong, China</span><br>
+                                <span class="i18n" data-en="GX Branch: Bldg 5, Yuanxin Dev Zone, Liujing Town, Beiliu, Guangxi, China" data-zh="广西分公司：中国广西壮族自治区北流市六靖镇元信开发区5栋">GX Branch: Bldg 5, Yuanxin Dev Zone, Liujing Town, Beiliu, Guangxi, China</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-card">
+                    <!-- FormZero: https://cozviber-forms.cozviber.workers.dev/api/forms/cozviber-forms/submissions -->
+                    <form action="https://cozviber-forms.cozviber.workers.dev/api/forms/cozviber-forms/submissions" method="POST" accept-charset="UTF-8">
+                        <div class="form-group">
+                            <label class="i18n" data-en="Your Name *" data-zh="您的姓名 *">Your Name *</label>
+                            <input type="text" name="name" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label class="i18n" data-en="Corporate Email *" data-zh="公司企业邮箱 *">Corporate Email *</label>
+                            <input type="email" name="email" required placeholder="you@company.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="i18n" data-en="Company Name and Website" data-zh="公司名称与官网">Company Name and Website</label>
+                            <input type="text" name="company" placeholder="Company name and website (optional)">
+                        </div>
+                        <div class="form-group">
+                            <label class="i18n" data-en="Target Quantity Per Order *" data-zh="目标采购批量 *">Target Quantity Per Order *</label>
+                            <select name="quantity" required>
+                                <option value="" class="i18n" data-en="Please select scale" data-zh="请选择预估订货规模">Please select scale</option>
+                                <option value="100-500">100 - 500 pcs (Agile Testing)</option>
+                                <option value="500-2000">500 - 2,000 pcs (Mid Scale)</option>
+                                <option value="2000+">2,000+ pcs (Massive Bulk Program)</option>
+                            </select>
+                        </div>
+                        <!--
+                          ============================================================
+                          FORM BACKEND: FormZero (https://github.com/BohdanPetryshyn/formzero)
+                          - Submissions saved to Cloudflare D1 database
+                          - Access dashboard at: https://cozviber-forms.cozviber.workers.dev
+                          - Email notifications configured via FormZero
+                          ============================================================
+                        -->
+                        <div class="form-group">
+                            <label class="i18n" data-en="Detailed Requirements (Fabrication, GSM, Target Dates)" data-zh="采购需求描述（面料克重、特殊工艺、目标货期）">Detailed Requirements (Fabrication, GSM, Target Dates)</label>
+                            <textarea name="message" rows="3" placeholder="Specify fabric composition, garment wash requirements, target delivery dates, or target FOB price..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="i18n" data-en="Tech Pack / Design File Link" data-zh="工艺包 / 设计文件链接">Tech Pack / Design File Link</label>
+                            <input type="url" name="file_link" placeholder="https://drive.google.com/your-file or https://wetransfer.com/...">
+                            <span style="font-size:11px; color: #777777; display:block; margin-top:4px;">Please upload your tech pack to Google Drive, WeTransfer, or Dropbox, and paste the share link here.</span>
+                        </div>
+                        <button type="submit" class="btn-primary i18n" data-en="Send Inquiry" data-zh="发送询价" style="width: 100%;">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3 class="i18n" data-en="COZVIBER" data-zh="淼鑫服饰">COZVIBER</h3>
+                <p class="i18n" data-en="A vertically-integrated garment manufacturing ecosystem serving cross-border e-commerce, fast-fashion, slow-fashion, wholesalers, and trading partners — from product development through to bulk delivery. JIT precision, dual-line production, and end-to-end quality control across every order." data-zh="垂直一体化服装制造生态，全面服务跨境电商、快时尚、慢时尚、批发商及贸易商——从产品研发到批量交付，JIT精益管理与双产线并行贯穿每一张订单。">A vertically-integrated garment manufacturing ecosystem serving cross-border e-commerce, fast-fashion, slow-fashion, wholesalers, and trading partners — from product development through to bulk delivery. JIT precision, dual-line production, and end-to-end quality control across every order.</p>
+            </div>
+            <div>
+                <h4 class="footer-title i18n" data-en="Navigate" data-zh="导航">Navigate</h4>
+                <ul class="footer-links">
+                    <li><a href="#home" class="i18n" data-en="Overview" data-zh="总览">Overview</a></li>
+                    <li><a href="#history" class="i18n" data-en="Our Story" data-zh="发展历程">Our Story</a></li>
+                    <li><a href="#network" class="i18n" data-en="Dual-Hub Strategy" data-zh="双基地布局">Dual-Hub Strategy</a></li>
+                    <li><a href="#workshops" class="i18n" data-en="Capabilities" data-zh="制造能力">Capabilities</a></li>
+                    <li><a href="#why-us" class="i18n" data-en="Why Partner with Us" data-zh="为何选择我们">Why Partner with Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title i18n" data-en="Technical Assets" data-zh="技术资产">Technical Assets</h4>
+                <ul class="footer-links">
+                    <li class="i18n" data-en="Dev and Sampling to Bulk" data-zh="研发打样到批量大货">Dev and Sampling to Bulk</li>
+                    <li class="i18n" data-en="3-Stage Milestone QC" data-zh="产前产中产后三段质检">3-Stage Milestone QC</li>
+                    <li class="i18n" data-en="OEKO-TEX Fabric Library" data-zh="OEKO-TEX认证面料库">OEKO-TEX Fabric Library</li>
+                    <li class="i18n" data-en="800k Meters Monthly Print" data-zh="月产能80万米数码印花">800k Meters Monthly Print</li>
+                    <li class="i18n" data-en="Smocking and Embroidery" data-zh="特种打揽与绣花">Smocking and Embroidery</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title i18n" data-en="Commercial Desk" data-zh="商务直连">Commercial Desk</h4>
+                <div class="footer-contact-item">
+                    <strong class="i18n" data-en="Wholesale and RFQ:" data-zh="大宗采购与询价：">Wholesale and RFQ:</strong>
+                    <a href="mailto:sales@cozviber.com">sales@cozviber.com</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2005 - 2026 COZVIBER Group. All Rights Reserved.</p>
+            <p style="color: #475569;" class="i18n" data-en="Dongguan Agile HQ and Guangxi Volume Base — Jointly Powered." data-zh="广东东莞敏捷快返总部与广西大型大货生产基地联合承制。">Dongguan Agile HQ and Guangxi Volume Base — Jointly Powered.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let currentLang;
+
+    // Auto-detect language from browser/region — China IPs default to Chinese
+    (function() {
+        var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        var isZh = userLang.indexOf('zh') === 0;
+        currentLang = isZh ? 'zh' : 'en';
+        applyLanguage();
+    })();
+
+    function applyLanguage() {
+        document.querySelectorAll('.i18n').forEach(function(el) {
+            var text = el.getAttribute('data-' + currentLang);
+            if (text) el.innerHTML = text;
+        });
+        var btn = document.getElementById('langBtn');
+        if (btn) btn.innerText = currentLang === 'en' ? '中文' : 'EN';
+    }
+
+    function toggleLanguage() {
+        currentLang = currentLang === 'en' ? 'zh' : 'en';
+        document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : 'en';
+        applyLanguage();
+    }
+    function openQrOverlay() { document.getElementById('qrOverlay').classList.add('active'); }
+    function closeQrOverlay() { document.getElementById('qrOverlay').classList.remove('active'); }
+    document.getElementById('qrOverlay').addEventListener('click', function(e) { if (e.target === this) closeQrOverlay(); });
+
+    function toggleMobileMenu() {
+        document.getElementById('mobileMenuBtn').classList.toggle('active');
+        var menuOverlay = document.getElementById('mobileNavOverlay'); menuOverlay.classList.toggle('active'); menuOverlay.setAttribute('aria-hidden', menuOverlay.classList.contains('active') ? 'false' : 'true');
+        document.body.style.overflow = document.getElementById('mobileNavOverlay').classList.contains('active') ? 'hidden' : '';
+    }
+    function closeMobileMenu() {
+        document.getElementById('mobileMenuBtn').classList.remove('active');
+        var overlay = document.getElementById('mobileNavOverlay'); overlay.classList.remove('active'); overlay.setAttribute('aria-hidden', 'true'); document.body.style.overflow = '';
+    }
+
+    // Keyboard support
+    document.getElementById('langBtn').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleLanguage(); }
+    });
+    document.getElementById('mobileMenuBtn').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMobileMenu(); }
+    });
+</script>
+
+</body>
+</html>
