@@ -752,15 +752,7 @@
 </footer>
 
 <script>
-    let currentLang;
-
-    // Auto-detect language from browser/region — China IPs default to Chinese
-    (function() {
-        var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-        var isZh = userLang.indexOf('zh') === 0;
-        currentLang = isZh ? 'zh' : 'en';
-        applyLanguage();
-    })();
+    let currentLang = 'en';
 
     function applyLanguage() {
         document.querySelectorAll('.i18n').forEach(function(el) {
